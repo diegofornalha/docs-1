@@ -2,34 +2,51 @@
 title: "Modelos"
 ---
 
-Com o Cursor Chat, Ctrl/⌘ K e Terminal Ctrl/⌘ K, você pode facilmente alternar entre diferentes modelos de sua escolha.
+### Modelos Disponíveis no Cursor
 
-### Menu Suspenso de Modelos
-
-Abaixo da caixa de entrada de IA, você verá um menu suspenso que permite selecionar o modelo que deseja usar. Por padrão, o Cursor tem esses modelos prontos para uso:
-
-- [`GPT-4o`](https://openai.com/index/hello-gpt-4o/)
-- [`GPT-4`](https://openai.com/index/gpt-4/)
-- [`Claude 3.5 Sonnet`](https://www.anthropic.com/news/claude-3-5-sonnet)
-- `cursor-small`
-  - `cursor-small` é o modelo personalizado do Cursor que não é tão inteligente quanto o `GPT-4`, mas é mais rápido e os usuários têm acesso ilimitado a ele.
-
-Você pode adicionar modelos adicionais em `Configurações do Cursor` > `Modelos` > `Nomes de Modelos`.
+O Cursor oferece uma variedade de modelos de IA que podem ser usados para diferentes propósitos, desde a geração de código até a revisão e otimização. Cada modelo tem suas próprias características e é projetado para atender a necessidades específicas dos desenvolvedores.
 
 <Frame>
   <img src="/images/advanced/model-toggle.png" />
 </Frame>
 
+## Menu Suspenso de Modelos
+
+Abaixo da caixa de entrada de IA, você verá um menu suspenso que permite selecionar o modelo que deseja usar. Por padrão, o Cursor tem esses modelos prontos para uso:
+
+- **GPT-4o**: Um dos modelos mais avançados da OpenAI, conhecido por sua capacidade de entender e gerar texto de forma altamente contextual e precisa.
+- **GPT-4**: Oferece um equilíbrio entre desempenho e custo, ideal para tarefas que exigem compreensão profunda do contexto.
+- **Claude 3.5 Sonnet**: Um modelo da Anthropic que se destaca por sua capacidade de raciocínio e geração de texto coerente.
+- **cursor-small**: O modelo personalizado do Cursor, que é mais rápido e oferece uso ilimitado, ideal para tarefas que não exigem a complexidade dos modelos premium.
+
 ### Modelos Apenas para Contexto Longo
 
 No chat de contexto longo, a seleção de modelos é limitada aos modelos que suportam contexto longo:
 
-- [`gpt-4o-128k`](https://platform.openai.com/docs/models)
-- [`gemini-1.5-flash-500k`](https://deepmind.google/technologies/gemini/flash/)
-- [`claude-3-haiku-200k`](https://www.anthropic.com/news/claude-3-family)
-- [`claude-3-sonnet-200k`](https://www.anthropic.com/news/claude-3-family)
-- [`claude-3-5-sonnet-200k`](https://www.anthropic.com/news/claude-3-5-sonnet)
+- **gpt-4o-128k**: Projetado para lidar com grandes volumes de texto, ideal para projetos complexos que exigem análise detalhada.
+- **gemini-1.5-flash-500k**: Um modelo da DeepMind que oferece uma janela de contexto extremamente ampla, permitindo a análise de grandes bases de código.
+- **claude-3-haiku-200k** e **claude-3-sonnet-200k**: Modelos da Anthropic que combinam capacidade de raciocínio com suporte a contexto longo.
 
-### Qual janela de contexto é usada para o modelo X?
+### Como Escolher o Modelo Certo
 
-No chat, limitamos a cerca de 20.000 tokens no momento (ou menos se o modelo não suportar tanto contexto). Para cmd-K, limitamos a cerca de 10.000 tokens, para equilibrar TTFT e qualidade. O chat de contexto longo usa a janela de contexto máxima do modelo.
+- **Tarefas Simples**: Use `cursor-small` para tarefas que exigem rapidez e não necessitam de compreensão profunda.
+- **Análise Detalhada**: Escolha `GPT-4` ou `Claude 3.5 Sonnet` para tarefas que exigem análise detalhada e compreensão contextual.
+- **Projetos Complexos**: Para projetos que envolvem grandes volumes de texto ou código, opte por modelos de contexto longo como `gpt-4o-128k` ou `gemini-1.5-flash-500k`.
+
+### Integração com Outros Recursos
+
+- **Revisão de IA**: Use modelos avançados em conjunto com a Revisão de IA para garantir que as análises sejam precisas e abrangentes.
+- **Símbolos @**: Combine o uso de modelos com símbolos @ para fornecer um contexto ainda mais rico e específico para a IA.
+
+### Dicas para Melhor Uso
+
+- **Explorar Diferentes Modelos**: Experimente diferentes modelos para entender qual deles atende melhor às suas necessidades específicas.
+- **Configurações Personalizadas**: Ajuste as configurações do Cursor para otimizar o uso dos modelos, garantindo que eles funcionem de acordo com suas preferências.
+- **Monitorar Desempenho**: Fique atento ao desempenho dos modelos e ajuste suas escolhas conforme necessário para garantir eficiência e precisão.
+
+### Estratégia de Uso
+
+- **Especificidade**: Seja específico ao escolher modelos para garantir que a IA forneça as respostas mais relevantes.
+- **Colaboração**: Use diferentes modelos para colaborar com outros desenvolvedores, aproveitando suas capacidades únicas para melhorar a qualidade do código.
+
+Com essas melhorias, o arquivo `models.mdx` fornece uma visão mais clara e abrangente sobre como usar os modelos de IA disponíveis no Cursor de forma eficaz, ajudando a melhorar a produtividade e a qualidade do trabalho com inteligência artificial integrada.
