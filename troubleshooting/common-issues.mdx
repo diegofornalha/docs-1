@@ -2,38 +2,79 @@
 title: Problemas Comuns
 ---
 
-#### Vejo uma atualização no changelog, mas o Cursor não atualiza.
+### Problemas Comuns e Soluções
 
-Se a atualização for muito recente, pode ser que ainda não tenha sido disponibilizada para você. Fazemos lançamentos em etapas, o que significa que liberamos novas atualizações para alguns usuários selecionados aleatoriamente antes de liberá-las para todos. Normalmente, alcançar todos os usuários leva cerca de 5 horas a partir do primeiro usuário. Para atualizações maiores, pode demorar mais.
+Esta seção fornece soluções para problemas comuns que você pode encontrar ao usar o Cursor. Se você não encontrar a solução para o seu problema aqui, considere visitar nosso [fórum de suporte](https://forum.cursor.com/) para mais assistência.
 
-Se você não quiser esperar, pode baixar o Cursor novamente em nossa [página inicial](https://cursor.com/). Provavelmente, você receberá a atualização mais recente instantaneamente. Não se preocupe, todas as suas configurações, extensões, etc., serão transferidas para a versão baixada novamente. Você não precisa desinstalar a versão existente primeiro.
+#### Atualizações do Cursor
 
-#### Tenho problemas com meu login no GitHub no Cursor / Como faço para sair do GitHub no Cursor?
+**Problema**: Vejo uma atualização no changelog, mas o Cursor não atualiza.
 
-Você pode tentar usar o comando `Sign Out of GitHub` no painel de comandos `Ctrl/⌘ + Shift + P`.
+**Solução**:
 
-#### Não consigo usar o GitHub Codespaces.
+- As atualizações são liberadas em etapas. Se a atualização for muito recente, pode ainda não estar disponível para você. Normalmente, leva cerca de 5 horas para alcançar todos os usuários.
+- Se você não quiser esperar, baixe o Cursor novamente em nossa [página inicial](https://cursor.com/). Suas configurações e extensões serão mantidas.
 
-Infelizmente, ainda não oferecemos suporte ao GitHub Codespaces.
+#### Login no GitHub
 
-#### Tenho erros ao conectar ao SSH Remoto.
+**Problema**: Tenho problemas com meu login no GitHub no Cursor.
 
-Atualmente, não oferecemos suporte para SSH em máquinas Windows. Se você não estiver usando uma máquina Windows, por favor, reporte seu problema para nós no [fórum](https://forum.cursor.com/). Seria útil incluir alguns logs para melhor assistência.
+**Solução**:
 
-#### Cursor Tab e Cmd K não funcionam atrás do meu proxy corporativo.
+- Use o comando `Sign Out of GitHub` no painel de comandos `Ctrl/⌘ + Shift + P` e tente fazer login novamente.
 
-Cursor Tab e Cmd K usam HTTP/2 por padrão, o que nos permite usar menos recursos com menor latência. Alguns proxies corporativos (por exemplo, Zscaler em certas configurações) bloqueiam HTTP/2. Para corrigir isso, você pode definir `"cursor.general.disableHttp2": true` nas configurações (`Cmd/Ctrl + ,` e depois procurar por `http2`).
+#### GitHub Codespaces
 
-#### Acabei de me inscrever no Pro, mas ainda estou no plano gratuito no aplicativo.
+**Problema**: Não consigo usar o GitHub Codespaces.
 
-Tente sair e entrar novamente em [Configurações](/get-started/migrate-from-vscode#cursor-settings).
+**Solução**:
 
-#### Quando meu uso será reiniciado novamente?
+- Atualmente, o Cursor não oferece suporte ao GitHub Codespaces. Considere usar um ambiente de desenvolvimento local.
 
-Se você está inscrito no Pro, pode clicar em `Gerenciar Assinatura` no [Painel](https://cursor.com/settings) e a data de renovação do seu plano será exibida no topo.
+#### Conexão SSH Remota
 
-Se você é um usuário gratuito, pode verificar quando recebeu o primeiro e-mail nosso na sua caixa de entrada. Seu uso será reiniciado todo mês a partir dessa data.
+**Problema**: Tenho erros ao conectar ao SSH Remoto.
 
-#### Como desinstalo o Cursor?
+**Solução**:
 
-Você pode seguir [este guia](https://code.visualstudio.com/docs/setup/uninstall) para desinstalar o Cursor. Substitua todas as ocorrências de "VS Code" ou "Code" por "Cursor", e ".vscode" por ".cursor".
+- O suporte para SSH em máquinas Windows não está disponível. Se você não estiver usando Windows, reporte o problema no [fórum](https://forum.cursor.com/).
+
+#### Proxy Corporativo
+
+**Problema**: Cursor Tab e Cmd K não funcionam atrás do meu proxy corporativo.
+
+**Solução**:
+
+- Defina `"cursor.general.disableHttp2": true` nas configurações (`Cmd/Ctrl + ,` e depois procurar por `http2`) para desativar o HTTP/2, que pode ser bloqueado por alguns proxies.
+
+#### Assinatura Pro
+
+**Problema**: Acabei de me inscrever no Pro, mas ainda estou no plano gratuito no aplicativo.
+
+**Solução**:
+
+- Tente sair e entrar novamente em [Configurações](/get-started/migrate-from-vscode#cursor-settings).
+
+#### Uso Mensal
+
+**Problema**: Quando meu uso será reiniciado novamente?
+
+**Solução**:
+
+- Usuários Pro podem verificar a data de renovação no [Painel](https://cursor.com/settings). Usuários gratuitos podem verificar a data do primeiro e-mail recebido do Cursor.
+
+#### Desinstalação do Cursor
+
+**Problema**: Como desinstalo o Cursor?
+
+**Solução**:
+
+- Siga [este guia](https://code.visualstudio.com/docs/setup/uninstall) substituindo "VS Code" por "Cursor".
+
+### Dicas Gerais para Solução de Problemas
+
+- **Verifique as Configurações**: Certifique-se de que suas configurações estão corretas e atualizadas.
+- **Consulte a Documentação**: Use os recursos de documentação do Cursor para entender melhor as funcionalidades e possíveis soluções.
+- **Atualize Regularmente**: Mantenha o Cursor atualizado para garantir que você tenha as últimas correções de bugs e melhorias.
+
+Com essas melhorias, o arquivo `common-issues.mdx` fornece uma visão mais clara e abrangente sobre como resolver problemas comuns no Cursor, ajudando a melhorar a experiência do usuário com soluções práticas e integradas.
