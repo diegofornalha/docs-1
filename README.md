@@ -1,24 +1,24 @@
-# Cursor Docs
+# Documentação do Cursor
 
-This repo contains the source code for [Cursor's Documentation](https://docs.cursor.com).
+Este repositório contém o código-fonte para a [Documentação do Cursor](https://docs.cursor.com).
 
-Please open Pull Requests to suggest helpful changes!
+Por favor, abra Pull Requests para sugerir mudanças úteis!
 
-### Development
+### Desenvolvimento
 
-Install the [Mintlify CLI](https://www.npmjs.com/package/mintlify) to preview the documentation changes locally. To install, use the following command
+Instale o [Mintlify CLI](https://www.npmjs.com/package/mintlify) para visualizar as mudanças na documentação localmente. Para instalar, use o seguinte comando
 
 ```
 npm i -g mintlify
 ```
 
-Run the following command at the root of your documentation (where mint.json is)
+Execute o seguinte comando na raiz da sua documentação (onde está o mint.json)
 
 ```
 mintlify dev
 ```
 
-#### Troubleshooting
+#### Solução de Problemas
 
-- Mintlify dev isn't running - Run `mintlify install` it'll re-install dependencies.
-- Page loads as a 404 - Make sure you are running in a folder with `mint.json`
+- Mintlify dev não está rodando - Execute `mintlify install` para reinstalar as dependências.
+- A página carrega como 404 - Certifique-se de que você está executando em uma pasta com `mint.json`
