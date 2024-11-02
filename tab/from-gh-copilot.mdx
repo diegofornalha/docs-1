@@ -1,28 +1,58 @@
 ---
-title: Migrar
+title: Migrar do GitHub Copilot
 ---
 
-### Melhorias do Tab
+### Melhorias do Cursor em Relação ao GitHub Copilot
 
-A maior diferença é a forma como o Cursor e o GitHub Copilot completam o código.
+O Cursor oferece uma série de melhorias em relação ao GitHub Copilot, tornando-o uma ferramenta mais poderosa e flexível para desenvolvedores que buscam otimizar seu fluxo de trabalho com IA.
 
-O GitHub Copilot pode inserir texto na posição do seu cursor. Ele não pode editar o código ao redor do seu cursor ou remover texto.
+#### Diferenças Principais
 
-O Cursor pode inserir texto no seu cursor, e muito mais:
+- **Edições de Múltiplos Caracteres**: Enquanto o GitHub Copilot pode apenas inserir texto na posição do seu cursor, o Cursor pode editar o código ao redor do seu cursor, permitindo edições mais complexas e contextuais.
 
-- Edições de múltiplos caracteres
   <Frame>
-    <img src="/images/cpp/multi-edit.png" />
-  </Frame>
-- Edições baseadas em instruções
-  <Frame>
-    <img src="/images/cpp/instruct.png" />
+    <img
+      src="/images/cpp/multi-edit.png"
+      alt="Edições de Múltiplos Caracteres"
+    />
   </Frame>
 
-Além disso, o Cursor tem um histórico de suas alterações recentes na janela de contexto, então ele sabe o que você está tentando fazer a seguir.
+- **Edições Baseadas em Instruções**: O Cursor permite que você forneça instruções específicas para modificar o código, oferecendo uma abordagem mais direcionada e precisa para alterações de código.
+
+  <Frame>
+    <img src="/images/cpp/instruct.png" alt="Edições Baseadas em Instruções" />
+  </Frame>
+
+- **Histórico de Alterações**: O Cursor mantém um histórico de suas alterações recentes, permitindo que ele entenda melhor o que você está tentando fazer e forneça sugestões mais relevantes.
+
+### Vantagens do Cursor
+
+- **Memória de Contexto**: O Cursor tem uma memória especialmente boa, permitindo que ele considere suas alterações recentes e erros de lint ao sugerir edições, o que resulta em sugestões mais precisas e úteis.
+
+- **Sugestões de Diffs Inteiros**: Ao contrário do Copilot, que sugere apenas inserções de código, o Cursor pode sugerir diffs inteiros, facilitando a implementação de mudanças mais significativas no código.
+
+- **Integração com Outros Recursos**: O Cursor se integra perfeitamente com outros recursos, como Revisão de IA e símbolos @, para fornecer um contexto mais rico e detalhado.
 
 ### Migrar do GitHub Copilot
 
-Como o Cursor vem por padrão com o GitHub Copilot, você pode ter o GitHub Copilot e o Cursor instalados ao mesmo tempo. Recomendamos desativar o GitHub Copilot quando você quiser usar o Cursor.
+Como o Cursor é um fork do VS Code, ele vem por padrão com o GitHub Copilot. Isso significa que você pode ter o GitHub Copilot e o Cursor instalados ao mesmo tempo. No entanto, recomendamos desativar o GitHub Copilot quando você quiser usar o Cursor para aproveitar ao máximo suas funcionalidades avançadas.
 
-Por padrão, o Cursor tem precedência sobre o GitHub Copilot. Se você quiser usar o GitHub Copilot, pode [desativar o Cursor](/tab/overview#copilot-settings) nas configurações.
+#### Como Desativar o GitHub Copilot
+
+- **Passo 1**: Abra as configurações do VS Code.
+- **Passo 2**: Navegue até as extensões instaladas.
+- **Passo 3**: Desative o GitHub Copilot.
+
+### Exemplos de Uso
+
+- **Refatoração de Código**: Use o Cursor para refatorar grandes blocos de código com sugestões de diffs inteiros, garantindo que todas as dependências e interações sejam consideradas.
+- **Correção de Erros**: Aproveite as edições baseadas em instruções para corrigir erros de lint de forma rápida e eficiente.
+- **Adaptação de Código**: Use a memória de contexto do Cursor para adaptar o código existente a novos requisitos ou padrões de projeto.
+
+### Dicas para Melhor Uso
+
+- **Explorar Funcionalidades**: Explore todas as funcionalidades do Cursor para entender como ele pode melhorar seu fluxo de trabalho.
+- **Combinar Recursos**: Combine o uso do Cursor com outros recursos, como Revisão de IA e símbolos @, para maximizar a eficiência e a qualidade do código.
+- **Feedback Iterativo**: Use o feedback do Cursor para iterar rapidamente sobre suas alterações, garantindo que o código esteja sempre em seu melhor estado.
+
+Com essas melhorias, o arquivo `from-gh-copilot.mdx` fornece uma visão mais clara e abrangente sobre como o Cursor supera o GitHub Copilot em termos de funcionalidades e eficiência, ajudando a melhorar a produtividade e a qualidade do trabalho com IA integrada.
