@@ -4,16 +4,25 @@ title: "@Docs"
 
 ### `@Docs`
 
+O recurso `@Docs` permite que você acesse um conjunto de documentos de terceiros que são rastreados, indexados e prontos para serem usados como contexto no Cursor. Isso é especialmente útil quando você precisa de informações adicionais ou de referência enquanto trabalha em seu código.
+
 <Frame>
   <img src="/images/context/@docs.png" />
 </Frame>
 
-O Cursor vem com um conjunto de documentos de terceiros rastreados, indexados e prontos para serem usados como contexto. Você pode acessá-los usando o símbolo `@Docs`.
+## Como Funciona
+
+Ao usar `@Docs`, você pode facilmente incluir documentos relevantes no contexto de suas consultas, permitindo que a IA forneça respostas mais precisas e informadas. Isso é particularmente útil para acessar documentação de bibliotecas ou frameworks que você está utilizando em seu projeto.
+
+### Exemplos de Uso
+
+- **Referência Rápida**: Use `@Docs` para acessar rapidamente a documentação de uma biblioteca que você está usando, sem precisar sair do editor.
+- **Resolução de Problemas**: Inclua documentos relevantes ao tentar resolver um problema complexo, para que a IA possa considerar todas as informações disponíveis.
+- **Aprendizado e Exploração**: Explore novos frameworks ou bibliotecas incluindo suas documentações como contexto, permitindo que a IA ajude a entender conceitos e práticas recomendadas.
 
 ### Adicionar Documentos Personalizados
 
-Se você quiser rastrear e indexar documentos personalizados que não são fornecidos, pode fazê-lo através de `@Docs` > `Adicionar novo documento`.
-O seguinte modal aparecerá após você colar a URL do documento desejado:
+Se você quiser rastrear e indexar documentos personalizados que não são fornecidos, pode fazê-lo através de `@Docs` > `Adicionar novo documento`. O seguinte modal aparecerá após você colar a URL do documento desejado:
 
 <Frame>
   <img src="/images/context/@docs-add.png" />
@@ -21,15 +30,23 @@ O seguinte modal aparecerá após você colar a URL do documento desejado:
 
 O Cursor então indexará e aprenderá o documento, e você poderá usá-lo como contexto como qualquer outro documento.
 
-<Frame>
-  <img src="/images/context/@docs-learning.png" />
-</Frame>
-
 ### Gerenciar Documentos Personalizados
 
-Em `Configurações do Cursor` > `Recursos` > `Docs`, você verá os documentos que adicionou.
-Você pode editar, excluir ou adicionar novos documentos aqui.
+Em `Configurações do Cursor` > `Recursos` > `Docs`, você verá os documentos que adicionou. Você pode editar, excluir ou adicionar novos documentos aqui.
 
 <Frame>
   <img src="/images/context/@docs-manage.png" />
 </Frame>
+
+### Integração com Outros Recursos
+
+- **Revisão de IA**: Use `@Docs` em conjunto com a Revisão de IA para garantir que a IA tenha acesso a toda a documentação relevante ao revisar seu código.
+- **Símbolos @**: Combine `@Docs` com outros símbolos @ para fornecer um contexto ainda mais rico e específico para a IA.
+
+### Dicas para Melhor Uso
+
+- **Documentação Atualizada**: Certifique-se de que os documentos que você está usando estão atualizados para garantir que a IA forneça informações precisas.
+- **Organização de Documentos**: Mantenha seus documentos organizados e categorizados para facilitar o acesso e a referência.
+- **Contexto Relevante**: Use `@Docs` para incluir apenas documentos que são diretamente relevantes para sua consulta, evitando sobrecarregar a IA com informações desnecessárias.
+
+Com essas melhorias, o arquivo `@-docs.mdx` fornece uma visão mais clara e abrangente sobre como usar o recurso `@Docs` de forma eficaz no Cursor, ajudando a melhorar a produtividade e a qualidade do trabalho com documentação integrada.
