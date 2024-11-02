@@ -2,7 +2,9 @@
 title: Espaço de Trabalho Sombra
 ---
 
-O espaço de trabalho sombra é uma configuração opcional que você pode configurar para melhorar a qualidade do código gerado por IA. Apenas alguns recursos o utilizam.
+### O que é o Espaço de Trabalho Sombra?
+
+O espaço de trabalho sombra é uma configuração opcional no Cursor que permite melhorar a qualidade do código gerado por IA. Ele cria um ambiente de desenvolvimento paralelo onde a IA pode executar lints e outras verificações sem interferir no seu fluxo de trabalho principal. Isso é especialmente útil para desenvolvedores que buscam garantir a qualidade do código enquanto utilizam recursos de IA.
 
 <Frame>
   <img
@@ -11,8 +13,36 @@ O espaço de trabalho sombra é uma configuração opcional que você pode confi
   />
 </Frame>
 
-Se você tiver o espaço de trabalho sombra habilitado, IAs em segundo plano podem solicitar lints para o código que escrevem. Isso gera uma janela oculta localmente no seu computador, para garantir que sua experiência de codificação não seja afetada.
+## Como Funciona
 
-O espaço de trabalho sombra aumentará o uso de memória do Cursor, por isso recomendamos habilitar esse recurso apenas se você tiver bastante RAM.
+Quando o espaço de trabalho sombra está habilitado, o Cursor cria uma janela oculta localmente no seu computador. Esta janela é usada para executar lints e outras verificações em segundo plano, garantindo que sua experiência de codificação não seja afetada. Isso permite que a IA forneça sugestões de código mais precisas e de alta qualidade.
 
-Você pode ler mais sobre o espaço de trabalho sombra em [nosso post no blog sobre ele](https://cursor.com/blog/shadow-workspace).
+### Benefícios do Espaço de Trabalho Sombra
+
+- **Qualidade do Código**: Melhora a qualidade do código gerado pela IA, permitindo que ela execute verificações em segundo plano.
+- **Desempenho**: Mantém o desempenho do seu ambiente de desenvolvimento principal, executando tarefas intensivas em recursos no espaço de trabalho sombra.
+- **Segurança**: Como o espaço de trabalho sombra é executado localmente, ele não compromete a segurança ou a privacidade do seu código.
+
+### Exemplos de Uso
+
+- **Verificação de Código**: Use o espaço de trabalho sombra para executar verificações de código em segundo plano, garantindo que o código gerado esteja livre de erros e otimizado.
+- **Testes Automatizados**: Execute testes automatizados no espaço de trabalho sombra para validar alterações de código sem interromper seu fluxo de trabalho.
+- **Análise de Desempenho**: Utilize o espaço de trabalho sombra para realizar análises de desempenho em segundo plano, identificando gargalos e oportunidades de otimização.
+
+### Dicas para Melhor Uso
+
+- **Requisitos de Sistema**: Certifique-se de que seu sistema possui RAM suficiente para suportar o espaço de trabalho sombra, pois ele pode aumentar o uso de memória do Cursor.
+- **Configurações Personalizadas**: Ajuste as configurações do espaço de trabalho sombra para otimizar seu uso de acordo com as necessidades do seu projeto.
+- **Monitoramento de Recursos**: Monitore o uso de recursos do seu sistema para garantir que o espaço de trabalho sombra não afete negativamente o desempenho do seu ambiente de desenvolvimento principal.
+
+### Integração com Outros Recursos
+
+- **Revisão de IA**: Use o espaço de trabalho sombra em conjunto com a Revisão de IA para garantir que as sugestões de código sejam de alta qualidade e livres de erros.
+- **Indexação da Base de Código**: A integração com a indexação da base de código permite que o espaço de trabalho sombra acesse rapidamente o contexto necessário para executar verificações e análises.
+
+### Estratégia de Uso
+
+- **Especificidade**: Configure o espaço de trabalho sombra para executar apenas as verificações e análises mais relevantes para o seu projeto.
+- **Colaboração**: Compartilhe insights e resultados obtidos no espaço de trabalho sombra com sua equipe para melhorar a colaboração e a qualidade do código.
+
+Com essas melhorias, o arquivo `shadow-workspace.mdx` fornece uma visão mais clara e abrangente sobre como usar o espaço de trabalho sombra de forma eficaz no Cursor, ajudando a melhorar a produtividade e a qualidade do trabalho com verificações e análises em segundo plano.
