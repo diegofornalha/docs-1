@@ -4,12 +4,44 @@ title: "@Web"
 
 ### `@Web`
 
+O recurso `@Web` permite que o Cursor construa uma consulta de busca com base na sua entrada e no contexto fornecido, pesquisando na web para encontrar informações relevantes. Isso é particularmente útil para encontrar as informações mais atualizadas ou para obter contexto adicional que não está disponível localmente.
+
 <Frame>
   <img src="/images/context/@web.png" />
 </Frame>
 
-Com `@Web`, o Cursor constrói uma consulta de busca com base na consulta e no contexto que você forneceu, e pesquisa na web para encontrar informações relevantes como contexto adicional. Isso é particularmente útil para encontrar as informações mais atualizadas.
+## Como Funciona
+
+Ao usar `@Web`, o Cursor envia uma consulta para a web, retornando resultados que são então usados como contexto para a IA. Isso permite que a IA forneça respostas mais informadas e precisas, especialmente quando se trata de informações que mudam rapidamente ou que são específicas de um domínio.
+
+### Exemplos de Uso
+
+- **Atualizações de Tecnologia**: Use `@Web` para buscar as últimas atualizações sobre uma tecnologia ou ferramenta que você está usando, garantindo que você esteja sempre atualizado.
+- **Resolução de Problemas**: Inclua resultados da web ao tentar resolver um problema complexo, permitindo que a IA considere soluções ou abordagens que foram discutidas online.
+- **Pesquisa de Mercado**: Ao desenvolver um produto, use `@Web` para buscar informações sobre concorrentes ou tendências de mercado.
 
 ### Sempre Ativo
 
 Você pode fazer o Cursor buscar na web para o chat em cada consulta ativando "Sempre buscar na web" em `Configurações do Cursor` > `Recursos` > `Chat`. Isso é equivalente a usar `@web` em cada consulta.
+
+<Frame>
+  <img src="/images/context/@web-settings.png" />
+</Frame>
+
+### Integração com Outros Recursos
+
+- **Revisão de IA**: Use `@Web` em conjunto com a Revisão de IA para garantir que a IA tenha acesso a todas as informações relevantes ao revisar seu código.
+- **Símbolos @**: Combine `@Web` com outros símbolos @ para fornecer um contexto ainda mais rico e específico para a IA.
+
+### Dicas para Melhor Uso
+
+- **Especificidade da Consulta**: Seja específico ao formular suas consultas para garantir que os resultados da web sejam os mais relevantes possíveis.
+- **Verificação de Fontes**: Sempre verifique a credibilidade das fontes retornadas pela busca na web para garantir que as informações sejam precisas e confiáveis.
+- **Contexto Relevante**: Use `@Web` para incluir apenas informações que são diretamente relevantes para sua consulta, evitando sobrecarregar a IA com dados desnecessários.
+
+### Estratégia de Uso
+
+- **Atualização Contínua**: Use `@Web` regularmente para garantir que você e sua equipe estejam sempre atualizados com as últimas informações e tendências.
+- **Colaboração**: Compartilhe resultados relevantes da web com sua equipe para facilitar a colaboração e a tomada de decisões informadas.
+
+Com essas melhorias, o arquivo `@-web.mdx` fornece uma visão mais clara e abrangente sobre como usar o recurso `@Web` de forma eficaz no Cursor, ajudando a melhorar a produtividade e a qualidade do trabalho com informações externas integradas.
