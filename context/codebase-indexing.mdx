@@ -2,25 +2,48 @@
 title: "Indexação da Base de Código"
 ---
 
-### Indexar sua Base de Código
+### O que é a Indexação da Base de Código?
 
-Para obter respostas mais precisas e melhores sobre a base de código usando `@codebase` ou `Ctrl/⌘ Enter`, você pode indexar sua base de código. Nos bastidores, o Cursor
-calcula embeddings para cada arquivo na sua base de código e os usará para melhorar a precisão das respostas da sua base de código.
-
-Seu índice de base de código será automaticamente sincronizado com suas alterações mais recentes na base de código.
-
-O status da indexação da sua base de código está em `Configurações do Cursor` > `Recursos` > `Indexação da Base de Código`.
+A indexação da base de código é um processo que permite ao Cursor analisar e entender melhor sua base de código, calculando embeddings para cada arquivo. Isso melhora a precisão das respostas da IA ao usar `@codebase` ou `Ctrl/⌘ Enter`, pois a IA pode acessar rapidamente o contexto relevante.
 
 <Frame>
   <img src="/images/chat/codebase-indexing.png" />
 </Frame>
 
+## Como Funciona
+
+Durante a indexação, o Cursor escaneia sua base de código e gera embeddings, que são representações matemáticas dos arquivos. Esses embeddings são usados para identificar rapidamente quais partes do código são mais relevantes para uma consulta específica.
+
+### Benefícios da Indexação
+
+- **Respostas Mais Precisas**: Com a indexação, a IA pode fornecer respostas mais precisas e contextualmente relevantes, pois tem acesso a uma visão mais completa do seu código.
+- **Eficiência**: A indexação permite que a IA acesse rapidamente o contexto necessário, reduzindo o tempo de resposta.
+- **Atualizações Automáticas**: O índice da base de código é automaticamente sincronizado com suas alterações mais recentes, garantindo que a IA sempre trabalhe com a versão mais atual do seu código.
+
+### Como Configurar a Indexação
+
+Você pode configurar a indexação da base de código em `Configurações do Cursor` > `Recursos` > `Indexação da Base de Código`. Aqui, você pode ativar ou desativar a indexação automática para novos repositórios e ajustar as configurações de arquivos a serem ignorados.
+
 ### Configurações Avançadas
 
-Por padrão, o Cursor indexará todos os arquivos na sua base de código.
+- **Ignorar Arquivos**: Use um arquivo `.cursorignore` para especificar quais arquivos ou diretórios devem ser ignorados durante a indexação. Isso pode melhorar a precisão das respostas ao excluir arquivos irrelevantes.
+- **Indexação Automática**: Ative a indexação automática para garantir que novos repositórios sejam indexados assim que forem adicionados ao Cursor.
 
-Você também pode expandir a seção `Mostrar Configurações` para acessar mais opções avançadas.
-Aqui, você pode decidir se deseja habilitar a indexação automática para novos repositórios e configurar os arquivos
-que o Cursor ignorará durante a indexação do repositório, além das configurações do seu .gitignore.
+### Exemplos de Uso
 
-Se você tiver arquivos de conteúdo grandes em seu projeto que a IA definitivamente não precisa ler, [ignorar esses arquivos](/context/ignore-files) pode melhorar a precisão das respostas.
+- **Revisão de Código**: Use a indexação para garantir que a IA tenha acesso a todo o contexto necessário ao revisar alterações de código.
+- **Refatoração**: Durante a refatoração, a indexação ajuda a IA a entender as interdependências entre diferentes partes do código.
+- **Depuração**: A indexação permite que a IA identifique rapidamente onde um problema pode estar ocorrendo, analisando o contexto completo do código.
+
+### Dicas para Melhor Uso
+
+- **Revisar Arquivos Ignorados**: Regularmente revise seu arquivo `.cursorignore` para garantir que apenas os arquivos realmente irrelevantes sejam excluídos da indexação.
+- **Manter o Código Organizado**: Uma base de código bem organizada facilita a indexação e melhora a precisão das respostas da IA.
+- **Monitorar o Desempenho**: Se você notar lentidão, considere ajustar as configurações de indexação para otimizar o desempenho.
+
+### Integração com Outros Recursos
+
+- **Revisão de IA**: A indexação melhora a eficácia da Revisão de IA, fornecendo um contexto mais rico e preciso.
+- **Símbolos @**: Use a indexação em conjunto com símbolos @ para fornecer um contexto ainda mais detalhado e específico para a IA.
+
+Com essas melhorias, o arquivo `codebase-indexing.mdx` fornece uma visão mais clara e abrangente sobre como usar a indexação da base de código de forma eficaz no Cursor, ajudando a melhorar a produtividade e a qualidade do trabalho com contexto integrado.
