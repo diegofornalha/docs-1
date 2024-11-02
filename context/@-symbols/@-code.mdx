@@ -4,24 +4,38 @@ title: "@Code"
 
 ### `@Code`
 
-Para referenciar seções específicas de código, você pode usar o símbolo `@Code`.
-
-### Pré-visualização de Código
-
-Semelhante ao símbolo [`@Files`](/context/@-symbols/@-files), o Cursor mostrará uma pré-visualização do conteúdo do código para que você possa verificar se o código que está referenciando é o correto.
+O recurso `@Code` permite que você referencie seções específicas de código dentro do Cursor. Isso é especialmente útil quando você precisa fornecer contexto detalhado sobre um trecho de código específico para a IA.
 
 <Frame>
   <img src="/images/context/@code.png" />
 </Frame>
 
-### Do Editor
+## Como Usar
 
-Outra maneira de adicionar trechos de código como contexto é selecionar o código que você deseja referenciar e clicar em "Adicionar ao Chat" (`Ctrl/⌘ Shift L`) ou "Adicionar à Edição" (`Ctrl/⌘ Shift K`).
+Para usar `@Code`, basta digitar `@` seguido pelo nome do arquivo e a linha ou bloco de código que você deseja referenciar. O Cursor mostrará uma pré-visualização do conteúdo do código para garantir que você está selecionando o trecho correto.
 
-Isso adicionará o trecho de código selecionado à caixa de entrada do Chat ou à barra de prompt Cmd K atualmente ativa.
+### Exemplos de Uso
 
-<Frame>
-  <img src="/images/context/@code-select.png" />
-</Frame>
+- **Revisão de Código**: Use `@Code` para incluir trechos específicos de código em uma revisão, permitindo que a IA analise o contexto detalhado.
+- **Geração de Documentação**: Referencie seções de código ao gerar documentação para garantir que todos os detalhes relevantes sejam incluídos.
+- **Depuração**: Inclua trechos de código ao depurar problemas complexos para que a IA possa entender o contexto completo.
 
-Para adicionar um código selecionado a um novo chat, você pode pressionar `Ctrl/⌘ L`.
+### Integração com Outros Recursos
+
+Para uma análise mais abrangente, considere usar `@Code` em conjunto com outros recursos do Cursor, como:
+
+- **Revisão de IA**: Para garantir que a IA tenha acesso a todo o contexto necessário durante a revisão de código.
+- **Indexação da Base de Código**: Para melhorar a precisão das respostas da IA ao usar trechos de código como contexto.
+
+### Dicas para Melhor Uso
+
+- **Verifique o Trecho de Código**: Sempre verifique a pré-visualização do código para garantir que você está referenciando o trecho correto.
+- **Combine com Símbolos @**: Use `@Code` em conjunto com outros símbolos @ para fornecer um contexto ainda mais rico para a IA.
+- **Contexto Relevante**: Limite o uso de `@Code` a trechos que são diretamente relevantes para a consulta, para evitar sobrecarregar a IA com informações desnecessárias.
+
+### Estratégia de Uso
+
+- **Especificidade**: Seja específico ao referenciar trechos de código para garantir que a IA receba o contexto mais relevante.
+- **Colaboração**: Use `@Code` para colaborar com outros desenvolvedores, fornecendo contexto detalhado sobre alterações ou problemas específicos.
+
+Com essas melhorias, o arquivo `@-code.mdx` fornece uma visão mais clara e abrangente sobre como usar o recurso `@Code` de forma eficaz no Cursor, ajudando a melhorar a produtividade e a qualidade do código.
