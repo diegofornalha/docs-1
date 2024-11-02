@@ -1,2 +1,7 @@
 README.md
 .gitignore
+.cursorignore
+favicon.svg
+global.css
+mint.json
+/images
