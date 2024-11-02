@@ -2,16 +2,42 @@
 title: "Regras para IA"
 ---
 
-Você pode adicionar instruções personalizadas ao Cursor modificando a seção `Regras para IA` em `Configurações do Cursor` > `Geral` > `Regras para IA`.
+### O que são Regras para IA?
 
-Esta instrução personalizada será incluída para recursos como Cursor Chat e Ctrl/⌘ K.
+As Regras para IA permitem que você personalize o comportamento da IA no Cursor, ajustando como ela interage com seu código e responde às suas consultas. Isso é especialmente útil para adaptar a IA às necessidades específicas do seu projeto ou equipe.
 
 <Frame>
   <img src="/images/context/rules-for-ai.png" />
 </Frame>
 
+## Como Configurar Regras para IA
+
+Você pode adicionar instruções personalizadas ao Cursor modificando a seção `Regras para IA` em `Configurações do Cursor` > `Geral` > `Regras para IA`. Essas instruções serão aplicadas a recursos como Cursor Chat e Ctrl/⌘ K, influenciando como a IA processa suas solicitações.
+
+### Exemplos de Regras
+
+- **Foco em Desempenho**: "Priorizar otimizações de desempenho ao sugerir alterações de código."
+- **Atenção à Segurança**: "Identificar e alertar sobre possíveis vulnerabilidades de segurança no código."
+- **Melhoria de Legibilidade**: "Sugerir alterações para melhorar a legibilidade e clareza do código."
+
 ### `.cursorrules`
 
-Para instruções específicas do projeto, você pode incluir as instruções em um arquivo `.cursorrules` na raiz do seu projeto.
+Para instruções específicas do projeto, você pode incluir as instruções em um arquivo `.cursorrules` na raiz do seu projeto. Assim como na seção "Regras para IA", as instruções no arquivo `.cursorrules` serão incluídas para recursos como Cursor Chat e Ctrl/⌘ K.
 
-Assim como na seção "Regras para IA", as instruções no arquivo `.cursorrules` serão incluídas para recursos como Cursor Chat e Ctrl/⌘ K.
+### Dicas para Criar Regras Eficazes
+
+- **Seja Claro e Específico**: Ao criar regras, use linguagem clara e específica para garantir que a IA entenda suas intenções.
+- **Priorize as Necessidades do Projeto**: Ajuste as regras para refletir as prioridades e objetivos do seu projeto, como desempenho, segurança ou manutenibilidade.
+- **Revise Regularmente**: Revise e atualize suas regras regularmente para garantir que elas continuem relevantes e eficazes à medida que seu projeto evolui.
+
+### Integração com Outros Recursos
+
+- **Revisão de IA**: Use regras para IA em conjunto com a Revisão de IA para garantir que a IA se concentre nos aspectos mais críticos durante a revisão de código.
+- **Símbolos @**: Combine regras para IA com símbolos @ para fornecer um contexto ainda mais rico e específico para a IA.
+
+### Estratégia de Uso
+
+- **Colaboração**: Compartilhe suas regras para IA com sua equipe para garantir que todos estejam alinhados sobre como a IA deve ser utilizada.
+- **Documentação**: Documente suas regras para IA e suas justificativas para facilitar a compreensão e a adesão por parte de novos membros da equipe.
+
+Com essas melhorias, o arquivo `rules-for-ai.mdx` fornece uma visão mais clara e abrangente sobre como configurar e utilizar as Regras para IA de forma eficaz no Cursor, ajudando a melhorar a produtividade e a qualidade do trabalho com personalização integrada.
