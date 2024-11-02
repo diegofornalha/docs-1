@@ -6,22 +6,44 @@ title: "@Git"
 
 ### `@Git`
 
-No Chat do Cursor, você pode usar `@Git` para adicionar commits, diffs ou pull requests do git ao seu prompt.
+O recurso `@Git` permite que você adicione commits, diffs ou pull requests do Git ao seu prompt no Chat do Cursor. Isso é especialmente útil para desenvolvedores que desejam integrar o controle de versão em suas interações com a IA, permitindo uma análise mais profunda e contextualizada das alterações de código.
 
 <Frame>
   <img src="/images/context/@git.png" />
 </Frame>
 
-### Casos de Uso Comuns
+## Como Usar
 
-Um caso de uso comum para `@Git` é permitir que a IA do Cursor examine o diff e procure por bugs ou problemas que possam ser causados pelo diff.
+Para usar `@Git`, basta digitar `@` seguido pelo tipo de referência Git que você deseja incluir, como um commit específico, um diff ou um pull request. O Cursor mostrará uma pré-visualização para garantir que você está selecionando o item correto.
 
-<Frame>
-  <img src="/images/context/@git-usecase1.png" />
-</Frame>
+### Exemplos de Uso
 
-Você também pode usar `@Diff of Working State` para gerar uma mensagem de commit a partir dos seus diffs atuais.
+- **Revisão de Código**: Use `@Git` para incluir um diff específico em uma revisão de código, permitindo que a IA analise as alterações e sugira melhorias ou identifique possíveis bugs.
+  <Frame>
+    <img src="/images/context/@git-usecase1.png" />
+  </Frame>
+- **Geração de Mensagens de Commit**: Inclua um diff atual para que a IA gere uma mensagem de commit clara e concisa.
+  <Frame>
+    <img src="/images/context/@git-commit-message.png" />
+  </Frame>
+- **Análise de Pull Requests**: Referencie um pull request inteiro para que a IA possa fornecer feedback sobre o impacto das alterações propostas.
 
-<Frame>
-  <img src="/images/context/@git-commit-message.png" />
-</Frame>
+### Integração com Outros Recursos
+
+Para uma análise mais abrangente, considere usar `@Git` em conjunto com outros recursos do Cursor, como:
+
+- **Revisão de IA**: Para garantir que a IA tenha acesso a todo o contexto necessário durante a revisão de código.
+- **Indexação da Base de Código**: Para melhorar a precisão das respostas da IA ao usar referências Git como contexto.
+
+### Dicas para Melhor Uso
+
+- **Verifique a Referência**: Sempre verifique a pré-visualização para garantir que você está referenciando o commit, diff ou pull request correto.
+- **Combine com Símbolos @**: Use `@Git` em conjunto com outros símbolos @ para fornecer um contexto ainda mais rico para a IA.
+- **Contexto Relevante**: Limite o uso de `@Git` a referências que são diretamente relevantes para a consulta, para evitar sobrecarregar a IA com informações desnecessárias.
+
+### Estratégia de Uso
+
+- **Especificidade**: Seja específico ao referenciar commits ou diffs para garantir que a IA receba o contexto mais relevante.
+- **Colaboração**: Use `@Git` para colaborar com outros desenvolvedores, fornecendo contexto detalhado sobre alterações ou problemas específicos.
+
+Com essas melhorias, o arquivo `@-git.mdx` fornece uma visão mais clara e abrangente sobre como usar o recurso `@Git` de forma eficaz no Cursor, ajudando a melhorar a produtividade e a qualidade do código.
