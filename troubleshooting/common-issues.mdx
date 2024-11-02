@@ -1,39 +1,39 @@
 ---
-title: Common Issues
+title: Problemas Comuns
 ---
 
-#### I see an update on the changelog but Cursor won't update.
+#### Vejo uma atualização no changelog, mas o Cursor não atualiza.
 
-If the update is very new, it might not have rolled out to you yet. We do staged rollouts, which means we release new updates to a few randomly selected users first before releasing them to everyone. Typically, reaching all users takes around 5 hours from the first user. For larger updates, it can take longer.
+Se a atualização for muito recente, pode ser que ainda não tenha sido disponibilizada para você. Fazemos lançamentos em etapas, o que significa que liberamos novas atualizações para alguns usuários selecionados aleatoriamente antes de liberá-las para todos. Normalmente, alcançar todos os usuários leva cerca de 5 horas a partir do primeiro usuário. Para atualizações maiores, pode demorar mais.
 
-If you don't want to wait, you can redownload Cursor from our [homepage](https://cursor.com/). You'll likely receive the latest update instantly. Don't worry, all of your settings, extensions, etc., will transfer to the redownloaded version. You don't have to uninstall the existing version first.
+Se você não quiser esperar, pode baixar o Cursor novamente em nossa [página inicial](https://cursor.com/). Provavelmente, você receberá a atualização mais recente instantaneamente. Não se preocupe, todas as suas configurações, extensões, etc., serão transferidas para a versão baixada novamente. Você não precisa desinstalar a versão existente primeiro.
 
-#### I have issues with my GitHub login in Cursor / How do I log out of GitHub in Cursor?
+#### Tenho problemas com meu login no GitHub no Cursor / Como faço para sair do GitHub no Cursor?
 
-You can try using the `Sign Out of GitHub` command from the command palette `Ctrl/⌘ + Shift + P`.
+Você pode tentar usar o comando `Sign Out of GitHub` no painel de comandos `Ctrl/⌘ + Shift + P`.
 
-#### I can't use GitHub Codespaces.
+#### Não consigo usar o GitHub Codespaces.
 
-Unfortunately, we don't support GitHub Codespaces yet.
+Infelizmente, ainda não oferecemos suporte ao GitHub Codespaces.
 
-#### I have errors connecting to Remote SSH.
+#### Tenho erros ao conectar ao SSH Remoto.
 
-Currently, we don't support SSHing into Windows machines. If you're not using a Windows machine, please report your issue to us in the [forum](https://forum.cursor.com/). It would be helpful to include some logs for better assistance.
+Atualmente, não oferecemos suporte para SSH em máquinas Windows. Se você não estiver usando uma máquina Windows, por favor, reporte seu problema para nós no [fórum](https://forum.cursor.com/). Seria útil incluir alguns logs para melhor assistência.
 
-#### Cursor Tab and Cmd K do not work behind my corporate proxy.
+#### Cursor Tab e Cmd K não funcionam atrás do meu proxy corporativo.
 
-Cursor Tab and Cmd K use HTTP/2 by default, which allows us to use less resources with lower latency. Some corporate proxies (e.g. Zscaler in certain configurations) block HTTP/2. To fix this, you can set `"cursor.general.disableHttp2": true` in the settings (`Cmd/Ctrl + ,` and then search for `http2`).
+Cursor Tab e Cmd K usam HTTP/2 por padrão, o que nos permite usar menos recursos com menor latência. Alguns proxies corporativos (por exemplo, Zscaler em certas configurações) bloqueiam HTTP/2. Para corrigir isso, você pode definir `"cursor.general.disableHttp2": true` nas configurações (`Cmd/Ctrl + ,` e depois procurar por `http2`).
 
-#### I just subscribed to Pro but I'm still on the free plan in the app.
+#### Acabei de me inscrever no Pro, mas ainda estou no plano gratuito no aplicativo.
 
-Try logging out and logging back in from [Settings](/get-started/migrate-from-vscode#cursor-settings).
+Tente sair e entrar novamente em [Configurações](/get-started/migrate-from-vscode#cursor-settings).
 
-#### When will my usage reset again?
+#### Quando meu uso será reiniciado novamente?
 
-If you're subscribed to Pro you can click on `Manage Subscription` from the [Dashboard](https://cursor.com/settings) and your plan renewal date will be displayed at the top.
+Se você está inscrito no Pro, pode clicar em `Gerenciar Assinatura` no [Painel](https://cursor.com/settings) e a data de renovação do seu plano será exibida no topo.
 
-If you're a free user you can check when you got the first email from us in your inbox. Your usage will reset every month from that date.
+Se você é um usuário gratuito, pode verificar quando recebeu o primeiro e-mail nosso na sua caixa de entrada. Seu uso será reiniciado todo mês a partir dessa data.
 
-#### How do I uninstall Cursor?
+#### Como desinstalo o Cursor?
 
-You can follow [this guide](https://code.visualstudio.com/docs/setup/uninstall) to uninstall Cursor. Replace every occurrence of "VS Code" or "Code" with "Cursor", and ".vscode" with ".cursor".
+Você pode seguir [este guia](https://code.visualstudio.com/docs/setup/uninstall) para desinstalar o Cursor. Substitua todas as ocorrências de "VS Code" ou "Code" por "Cursor", e ".vscode" por ".cursor".

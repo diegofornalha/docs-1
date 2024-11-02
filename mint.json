@@ -21,15 +21,15 @@
   },
   "metadata": {
     "og:site_name": "Cursor",
-    "og:title": "Cursor - Build Software Faster",
-    "og:description": "Built to make you extraordinarily productive, Cursor is the best way to code with AI.",
+    "og:title": "Cursor - Construa Software Mais Rápido",
+    "og:description": "Feito para torná-lo extraordinariamente produtivo, o Cursor é a melhor maneira de programar com IA.",
     "og:url": "https://cursor.com",
     "og:image": "/images/hero.png",
     "og:locale": "en_US",
     "og:logo": "/images/logo/app-logo.svg",
     "article:publisher": "Anysphere Inc.",
-    "twitter:title": "Cursor - Build Software Faster",
-    "twitter:description": "Built to make you extraordinarily productive, Cursor is the best way to code with AI.",
+    "twitter:title": "Cursor - Construa Software Mais Rápido",
+    "twitter:description": "Feito para torná-lo extraordinariamente produtivo, o Cursor é a melhor maneira de programar com IA.",
     "twitter:url": "https://cursor.com",
     "twitter:image": "/images/hero.png",
     "twitter:site": "@cursor_ai",
@@ -38,45 +38,29 @@
   },
   "topbarLinks": [
     {
-      "name": "GitHub",
-      "url": "https://github.com/getcursor/docs"
-    },
-    {
-      "name": "Forum",
-      "url": "https://forum.cursor.com/"
+      "name": "Doc Original",
+      "url": "https://phizclip-assets.phiz.live/phizclip/mop-pt/document/pt/introduce/introduction/PhizClip.html"
     }
   ],
   "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://cursor.com/settings"
+    "name": "Baixar a IDE",
+    "url": "https://phizclip-assets.phiz.live/phizclip/mop-pt/document/pt/idedownload/idedownload/idedownload.html"
   },
   "anchors": [
     {
-      "name": "Discord",
-      "icon": "discord",
-      "url": "https://discord.gg/w6HqfaQ2u2",
-      "iconType": "brands"
-    },
-    {
-      "name": "Forum",
+      "name": "Documentação original",
       "icon": "newspaper",
-      "url": "https://forum.cursor.com/",
-      "iconType": "duotone"
-    },
-    {
-      "name": "Email",
-      "icon": "headset",
-      "url": "mailto:hi@cursor.com",
+      "url": "https://phizclip-assets.phiz.live/phizclip/mop-pt/document/pt/introduce/introduction/PhizClip.html",
       "iconType": "duotone"
     }
   ],
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "Introdução",
       "pages": ["get-started/migrate-from-vscode", "get-started/usage"]
     },
     {
-      "group": "Tab",
+      "group": "Aba",
       "pages": ["tab/overview", "tab/from-gh-copilot", "tab/advanced-features"]
     },
     {
@@ -93,12 +77,12 @@
       "pages": ["cmdk/overview", "cmdk/terminal-cmdk"]
     },
     {
-      "group": "Context",
+      "group": "Contexto",
       "pages": [
         "context/codebase-indexing",
         "context/rules-for-ai",
         {
-          "group": "@ Symbols",
+          "group": "@ Símbolos",
           "pages": [
             "context/@-symbols/basic",
             "context/@-symbols/@-files",
@@ -117,7 +101,7 @@
       ]
     },
     {
-      "group": "Advanced",
+      "group": "Avançado",
       "pages": [
         "advanced/models",
         "advanced/api-keys",
@@ -126,13 +110,11 @@
       ]
     },
     {
-      "group": "Privacy",
-      "pages": [
-        "privacy/privacy"
-      ]
-    },    
+      "group": "Privacidade",
+      "pages": ["privacy/privacy"]
+    },
     {
-      "group": "Troubleshooting",
+      "group": "Solução de Problemas",
       "pages": [
         "troubleshooting/common-issues",
         "troubleshooting/troubleshooting-guide"
