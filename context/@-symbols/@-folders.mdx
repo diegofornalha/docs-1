@@ -6,8 +6,31 @@ title: "@Folders"
 
 ### `@Folders`
 
-Você também pode referenciar pastas inteiras no Cursor como contexto. `@Folders` é especialmente útil para [chat de contexto longo](/chat/overview#long-context-chat) onde você deseja fornecer muito contexto para a IA.
+O recurso `@Folders` permite que você referencie pastas inteiras no Cursor como contexto. Isso é especialmente útil para [chat de contexto longo](/chat/overview#long-context-chat), onde você deseja fornecer muito contexto para a IA.
 
 <Frame>
   <img src="/images/context/@folder.png" />
 </Frame>
+
+## Como Funciona
+
+Ao usar `@Folders`, o Cursor inclui automaticamente todos os arquivos dentro da pasta especificada como parte do contexto para a IA. Isso permite que a IA tenha uma visão mais abrangente do projeto, facilitando a geração de respostas mais precisas e relevantes.
+
+### Exemplos de Uso
+
+- **Revisão de Código em Lote**: Use `@Folders` para revisar todas as alterações em uma pasta específica, garantindo que todas as dependências e interações entre arquivos sejam consideradas.
+- **Refatoração de Módulos**: Ao refatorar um módulo inteiro, referencie a pasta do módulo para garantir que todas as partes do código sejam atualizadas de forma consistente.
+- **Análise de Projeto**: Para uma análise completa do projeto, inclua pastas principais para que a IA possa entender a estrutura e a lógica geral do código.
+
+### Dicas para Melhor Uso
+
+- **Estrutura de Pastas**: Mantenha uma estrutura de pastas organizada e lógica para facilitar o uso de `@Folders` e garantir que a IA receba o contexto correto.
+- **Contexto Relevante**: Use `@Folders` em conjunto com outros símbolos `@` para fornecer um contexto ainda mais rico e específico.
+- **Limitar o Escopo**: Quando possível, limite o uso de `@Folders` a pastas que são diretamente relevantes para a consulta, para evitar sobrecarregar a IA com informações desnecessárias.
+
+### Integração com Outros Recursos
+
+- **Indexação da Base de Código**: Certifique-se de que sua base de código está indexada para que o uso de `@Folders` seja o mais eficaz possível.
+- **Regras para IA**: Considere definir regras específicas para a IA ao usar `@Folders`, para que ela saiba exatamente no que se concentrar.
+
+Com essas melhorias, o uso de `@Folders` pode se tornar uma ferramenta poderosa para gerenciar e analisar grandes volumes de código de forma eficiente e eficaz.
