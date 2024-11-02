@@ -1,4 +1,4 @@
-# Documentação do Cursor
+# Documentação para Pragramar Mini apps usando IA
 
 Este repositório contém o código-fonte para a [Documentação do Cursor](https://docs.cursor.com).
 
