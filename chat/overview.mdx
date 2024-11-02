@@ -1,71 +1,63 @@
 ---
-title: "Overview"
+title: "Visão Geral"
 ---
 
-Cursor Chat lets you ask questions or solve problems in your codebase with the most capable language models, all in your editor. 
-
+O Cursor Chat permite que você faça perguntas ou resolva problemas na sua base de código com os modelos de linguagem mais capazes, tudo dentro do seu editor.
 
 <Frame>
   <img src="/images/chat/chat.png" />
 </Frame>
 
-For language models to give good answers, they need to know specific things that are relevant to your codebase -- context. 
+Para que os modelos de linguagem forneçam boas respostas, eles precisam saber coisas específicas que são relevantes para sua base de código — contexto.
 
-Cursor has several built in features to provide context in chat, such as automatically including context across your entire codebase, searching the web, 
-indexing documentation, and user-specified references to code blocks. They are built to eliminate the tedious copy-pasting otherwise necessary for working with language models on code.
+O Cursor possui vários recursos integrados para fornecer contexto no chat, como incluir automaticamente o contexto em toda a sua base de código, pesquisar na web,
+indexar documentação e referências especificadas pelo usuário para blocos de código. Eles são construídos para eliminar o tedioso copiar e colar necessário para trabalhar com modelos de linguagem em código.
 
-By default, Cursor Chat is in the AI pane, which is on the opposite side of your primary sidebar. You can toggle the AI pane by pressing `Ctrl/⌘ + L`, which focuses onto the chat when opened.
-To submit your query, press `Enter`.
+Por padrão, o Cursor Chat está no painel de IA, que fica no lado oposto da sua barra lateral principal. Você pode alternar o painel de IA pressionando `Ctrl/⌘ + L`, que foca no chat quando aberto.
+Para enviar sua consulta, pressione `Enter`.
 
+### Mensagens do Usuário e da IA
 
-### User and AI Messages 
+As mensagens do usuário contêm o texto que você digita, junto com o contexto que você referenciou. Você pode voltar a qualquer mensagem anterior do usuário para editar e executar novamente suas consultas. Isso irá
+sobrescrever quaisquer mensagens após isso e gerar novas.
 
-User messages contain the text you type, along with the context you've referenced. You can go back to any previous user messages to edit and rerun your queries. This will
-overwrite any messages after that and regenerate new ones.
+As mensagens da IA são as respostas geradas a partir do modelo de IA que você escolheu. Elas são emparelhadas com a mensagem do usuário anterior. As mensagens da IA podem conter blocos de código analisados que podem ser adicionados à sua base de código com [aplicação instantânea](/chat/apply).
 
-AI messages are the responses generated from the AI model you've picked. They are paired with the user message before them. AI messages may contain parsed code blocks which can be added to your codebase with [instant apply](/chat/apply).
+Todas as mensagens de usuário/IA juntas no mesmo thread são chamadas de thread de chat, e cada thread de chat é salva no seu histórico de chat.
 
-All user/AI messages together in the same thread are called a chat thread, and each chat thread is saved in your chat history. 
+### Histórico de Chat
 
+Ao pressionar o botão "Chats Anteriores" no canto superior direito do painel de IA, ou pressionando `Ctrl/⌘ + Alt/Option + L`, você pode ver o histórico de chat. Você pode clicar em qualquer thread de chat para voltar e ver as mensagens que compõem esse thread,
+e você também pode modificar o título do thread clicando no ícone de caneta, ou excluir o thread clicando no ícone de lixeira ao passar o mouse sobre o thread no histórico.
 
-### Chat History
+O título de um thread do Cursor é apenas as primeiras palavras da primeira mensagem do usuário.
 
-By pressing on the "Previous Chats" button on the top right of the AI pane, or by pressing `Ctrl/⌘ + Alt/Option + L`, you can see the chat history. You can click on any chat thread to go back and see the messages that make up that thread,
-and you can also modify the title of the thread by clicking the pen icon, or delete the thread by clicking the garbage can icon upon hovering over the thread in the history. 
+### Contexto Padrão
 
-The title of a Cursor thread is just the first few words of the first user message.
+Por padrão, o Cursor Chat inclui o arquivo atual como contexto. Você pode enviar uma consulta sem incluir nenhum contexto pressionando `Alt/Option Enter` ao enviar,
+ou ativar `Padrão para nenhum contexto` em `Configurações do Cursor` > `Recursos` > `Chat`. Chats que começam com uma solicitação sem contexto não adicionarão contexto para nenhuma mensagem.
 
+Conforme você digita, você pode ver o que será incluído no contexto nas pílulas abaixo da caixa de entrada.
 
-### Default Context
+### Adicionando Contexto
 
-By default, Cursor Chat includes the current file as context. You can submit a query without including any context by pressing `Alt/Option Enter` on submit,
-or turn on `Default to no context` under `Cursor Settings` > `Features` > `Chat`. Chats that begin with a no-context request will not add context for any messages.
+Por padrão, as mensagens do usuário conterão o texto que você digita, junto com o contexto que você referenciou. Você pode adicionar mais contexto personalizado a cada bolha com símbolos @, e por padrão,
+o arquivo visualizado atualmente também será usado como contexto na mensagem do usuário.
 
-As you type, you can see what will be included in context in the pills below the input box.
+Veja as páginas de [símbolos @](/context/@-symbols/@-files) para mais informações.
 
+### Correção de IA no Chat
 
-### Adding Context 
+Um recurso conveniente para corrigir erros de lint na sua base de código é usar a correção de IA no chat. Para fazer isso, passe o mouse sobre o erro no editor e clique no botão azul de correção de IA que aparece.
 
-By default, user messages will contain the text you type, along with the context you've referenced. You can add more custom context to each bubble with @ symbols, and by default,
-the current viewing file will be used as context as well in the user message. 
-
-See the [@ symbols](/context/@-symbols/@-files) pages for more information.
-
-
-### AI Fix in Chat
-
-A convenient feature to fix linter errors in your codebase is to use the AI fix in chat. To do this, hover over the error in the editor, and click the blue AI fix button that shows up.
-
-The keyboard shortcut for this would be to do `Ctrl/⌘ + Shift + E`.
+O atalho de teclado para isso seria `Ctrl/⌘ + Shift + E`.
 
 <Frame>
   <img src="/images/chat/ai-fix.png" />
 </Frame>
 
+### Chat de Contexto Longo (Beta)
 
+Você pode habilitar o chat de contexto longo indo para `Configurações do Cursor` > `Beta` > `Chat de Contexto Longo`. Com isso habilitado, você pode alternar entre diferentes modos de chat através de `Ctrl/⌘ .`.
 
-### Long Context Chat (Beta)
-
-You can enable long context chat by going to `Cursor Settings` > `Beta` > `Long Context Chat`. With this enabled, you can toggle different chat modes through `Ctrl/⌘ .`. 
-
-Long context chat allows you to include entire folders as context, since the supported models have a larger context window. Check out more about the long context only models [here](/advanced/models#long-context-only-models).
+O chat de contexto longo permite que você inclua pastas inteiras como contexto, já que os modelos suportados têm uma janela de contexto maior. Confira mais sobre os modelos apenas para contexto longo [aqui](/advanced/models#long-context-only-models).

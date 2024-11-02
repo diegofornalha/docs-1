@@ -1,52 +1,45 @@
 ---
-title: "Overview"
+title: "Visão Geral"
 ---
 
-Cmd K, also known or "Ctrl K" on Windows/Linux, allows you to generate new code or edit existing code in the editor window.
+Cmd K, também conhecido como "Ctrl K" no Windows/Linux, permite que você gere novo código ou edite código existente na janela do editor.
 
 <Frame>
-<img src="/images/cmdk/regular.png" />
+  <img src="/images/cmdk/regular.png" />
 </Frame>
 
-### Prompt Bars 
+### Barras de Prompt
 
-In Cursor, we call the bar that appears when you press `Ctrl/Cmd K` the "Prompt Bar". It works similarly to the AI input box for chat, in 
-which you can type normally, or use [@ symbols](context/@-symbols) to reference other context. 
+No Cursor, chamamos a barra que aparece quando você pressiona `Ctrl/Cmd K` de "Barra de Prompt". Ela funciona de forma semelhante à caixa de entrada de IA para chat, na qual você pode digitar normalmente ou usar [símbolos @](context/@-symbols) para referenciar outro contexto.
 
+### Geração Inline
 
-### Inline Generation
-
-If no code is selected when you press `Ctrl/Cmd K`, Cursor will generate new code based on the prompt you type in the prompt bar. 
+Se nenhum código estiver selecionado quando você pressionar `Ctrl/Cmd K`, o Cursor gerará um novo código com base no prompt que você digitar na barra de prompt.
 
 <Frame>
-<img src="/images/cmdk/generate.png" />
+  <img src="/images/cmdk/generate.png" />
 </Frame>
 
+### Edições Inline
 
-### Inline Edits 
-
-For in-place edits, you can simply select the code you want to edit and type into the prompt bar.
+Para edições no local, você pode simplesmente selecionar o código que deseja editar e digitar na barra de prompt.
 
 <Frame>
-<img src="/images/cmdk/edit.png" />
+  <img src="/images/cmdk/edit.png" />
 </Frame>
 
+### Instruções de Acompanhamento
 
-### Follow-up Instructions
+Após cada geração, você pode refinar ainda mais o prompt adicionando mais instruções à barra de prompt e pressionando `Enter` para que a IA regenere com base nas suas instruções de acompanhamento.
 
-After each generation, you can further refine the prompt by adding more instructions to the prompt bar, and pressing `Enter` so the AI regenerates based on your follow-up instructions. 
+### Contexto Padrão
 
+Por padrão, o Cursor tentará encontrar diferentes tipos de informações úteis para melhorar a geração de código, além dos [símbolos @](/context/@-symbols/@-files) manuais que você incluir.
 
-### Default Context
+O contexto adicional pode incluir arquivos relacionados, arquivos visualizados recentemente e mais. Após a coleta, o Cursor classifica os itens de contexto por relevância para sua edição/geração e mantém os principais itens em contexto para o modelo de linguagem grande.
 
-By default, Cursor will try to find different kinds of useful information to improve code generation, in addition to the manual [@ symbols](/context/@-symbols/@-files) you include.
+### Pergunta Rápida
 
-Additional context may include related files, recently viewed files, and more. After gathering, Cursor ranks the context items by relevance to your edit/generation 
-and keeps the top items in context for the large language model.
+Se você pressionar `Option/Alt Enter` enquanto estiver na barra de prompt, o Cursor responderá a quaisquer perguntas que você tenha sobre a seleção e o contexto que você anexou.
 
-
-### Quick Question
-
-If you press `Option/Alt Enter` while in the prompt bar, Cursor will respond to any questions you have about the selection, and the context you have attached. 
-
-The contents of this conversation could be further used in follow-up generations, so you could simply type "do it" after Cursor comes up with a response to generate the code after a quick question.
+O conteúdo desta conversa pode ser usado em gerações de acompanhamento, então você pode simplesmente digitar "faça isso" depois que o Cursor apresentar uma resposta para gerar o código após uma pergunta rápida.

@@ -1,32 +1,30 @@
 ---
-title: "With Codebase"
+title: "Com Base de Código"
 ---
 
-### Default Codebase Chat 
+### Chat de Base de Código Padrão
 
-If a codebase isn't [indexed](/context/codebase-indexing), Cursor Chat will first attempt to compute a few search queries to
-be used to search across your codebase. For better accuracy, it's recommended to use [embeddings search](#embeddings-search).
-
-<Frame>
-<img src="/images/chat/no-embeddings.png" />
-</Frame>
-
-
-### Embeddings Search
-
-With [codebase indexing](/context/codebase-indexing), Cursor Chat can accurately generate responses based on your codebase.
-
-By pressing `Ctrl/⌘ + Enter` after typing a message, Cursor Chat scans through your indexed codebase to find pieces of relevant code. This is generally
-good for quickly including code snippets to be taken into the context of the conversation. For more control over the codebase search and better accuracy, 
-you can use `@codebase`.
+Se uma base de código não estiver [indexada](/context/codebase-indexing), o Cursor Chat tentará primeiro calcular algumas consultas de pesquisa para
+serem usadas para pesquisar em toda a sua base de código. Para melhor precisão, é recomendado usar a [pesquisa de embeddings](#embeddings-search).
 
 <Frame>
-<img src="/images/chat/embeddings.png" />
+  <img src="/images/chat/no-embeddings.png" />
 </Frame>
 
-### Advanced Codebase Search 
+### Pesquisa de Embeddings
 
-Cursor codebase chat goes through a more detailed search when `@Codebase` is used. 
+Com a [indexação da base de código](/context/codebase-indexing), o Cursor Chat pode gerar respostas precisas com base na sua base de código.
 
-See more about `@Codebase` [here](/context/@-symbols/@-codebase).
+Ao pressionar `Ctrl/⌘ + Enter` após digitar uma mensagem, o Cursor Chat examina sua base de código indexada para encontrar trechos de código relevantes. Isso é geralmente
+bom para incluir rapidamente trechos de código no contexto da conversa. Para mais controle sobre a pesquisa na base de código e melhor precisão,
+você pode usar `@codebase`.
 
+<Frame>
+  <img src="/images/chat/embeddings.png" />
+</Frame>
+
+### Pesquisa Avançada na Base de Código
+
+O chat de base de código do Cursor realiza uma pesquisa mais detalhada quando `@Codebase` é usado.
+
+Veja mais sobre `@Codebase` [aqui](/context/@-symbols/@-codebase).

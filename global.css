@@ -3,19 +3,18 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: white;
+  background: #fff;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #eeee;
+  background-color: #eee;
   border-radius: 10px;
-  border: none;
 }
 
 #sidebar *,
 html {
   scrollbar-width: thin;
-  scrollbar-color: #eeee white;
+  scrollbar-color: #eee #fff;
   scrollbar-gutter: stable;
 }
 
@@ -25,11 +24,11 @@ a:has(> code) {
 
 a > code {
   cursor: pointer;
-  border-bottom: #0c0c15 1px solid !important;
+  border-bottom: 1px solid #0c0c15 !important;
 }
 
 a > code:hover {
-  border-bottom: #0c0c15 2px solid !important;
+  border-bottom: 2px solid #0c0c15 !important;
 }
 
 #content-area > div.leading-6.mt-14 > footer > div.sm\:flex > a {
@@ -39,14 +38,14 @@ a > code:hover {
 @font-face {
   font-family: 'GT Standard Mono';
   src: url('/fonts/GT-Standard-Mono-VF-Beta-V1.ttf') format('truetype');
-  font-weight: 400 450 700; /* Normal to Bold */
+  font-weight: 400 700; /* Normal to Bold */
   font-style: normal;
 }
 
 @font-face {
   font-family: 'GT Standard';
   src: url('/fonts/GT-Standard-VF-Beta-V4.ttf') format('truetype');
-  font-weight: 300 400 450 500 700 900; /* Normal to Bold */
+  font-weight: 300 900; /* Normal to Bold */
   font-style: normal;
 }
 
@@ -71,6 +70,6 @@ h6 {
   font-family: 'GT Standard Mono', monospace;
 }
 
-#sidebar > div > ul > li:nth-child(1) {
+#sidebar > div > ul > li:first-child {
   display: none;
 }

@@ -1,23 +1,23 @@
 ---
-title: Privacy FAQ
+title: FAQ de Privacidade
 ---
 
-### What is Privacy Mode? 
+### O que é o Modo de Privacidade?
 
-With `Privacy Mode`, none of your code will ever be stored by us or any third-party (except for OpenAI which persists the prompts we send to them for 30 days for trust and safety, unless you're on the business plan). Otherwise, we may save prompts / collect telemetry data to improve Cursor. 
+Com o `Modo de Privacidade`, nenhum dos seus códigos será armazenado por nós ou por terceiros (exceto pela OpenAI, que mantém os prompts que enviamos para eles por 30 dias para confiança e segurança, a menos que você esteja no plano empresarial). Caso contrário, podemos salvar prompts/coletar dados de telemetria para melhorar o Cursor.
 
-You can enable `Privacy Mode` under `Cursor Settings` > `General` > `Privacy Mode`.
+Você pode habilitar o `Modo de Privacidade` em `Configurações do Cursor` > `Geral` > `Modo de Privacidade`.
 
 <Frame>
-  <img src="/images/get-started/privacy-mode.png" alt="Privacy Mode" />
+  <img src="/images/get-started/privacy-mode.png" alt="Modo de Privacidade" />
 </Frame>
 
-### Are requests always routed through the Cursor backend? 
+### As solicitações são sempre roteadas pelo backend do Cursor?
 
-Yes! Even if you use your API key, your requests will still go through our backend! That's where we do our final prompt building.
+Sim! Mesmo que você use sua chave de API, suas solicitações ainda passarão pelo nosso backend! É lá que fazemos a construção final do prompt.
 
-### Does indexing the codebase require storing code? 
+### Indexar a base de código requer armazenar código?
 
-It does not! If you choose to index your codebase, Cursor will upload your codebase in small chunks to our server to compute embeddings, but all plaintext code ceases to exist after the life of the request. 
+Não requer! Se você optar por indexar sua base de código, o Cursor fará o upload da sua base de código em pequenos pedaços para o nosso servidor para calcular embeddings, mas todo o código em texto simples deixa de existir após a vida útil da solicitação.
 
-The embeddings and metadata about your codebase (hashes, file names) are stored in our database, but none of your code is.
+Os embeddings e metadados sobre sua base de código (hashes, nomes de arquivos) são armazenados em nosso banco de dados, mas nenhum dos seus códigos é.

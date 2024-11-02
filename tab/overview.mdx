@@ -1,38 +1,44 @@
 ---
-title: "Overview"
+title: "Visão Geral"
 ---
 
-Cursor Tab is our native autocomplete feature. It's a more powerful Copilot that suggests entire diffs with especially good memory.
+Cursor Tab é nosso recurso nativo de autocompletar. É um Copilot mais poderoso que sugere diffs inteiros com uma memória especialmente boa.
 
 <Frame>
   <video src="/images/cpp/cpp-full-video.mp4" autoPlay loop muted playsInline />
 </Frame>
 
-Powered by a custom model, Cursor Tab can:
+Impulsionado por um modelo personalizado, o Cursor Tab pode:
 
-* Suggest edits around your cursor, not just insertions of additional code.
-* Modify multiple lines at once.
-* Make suggestions based on your recent changes and linter errors.
+- Sugerir edições ao redor do seu cursor, não apenas inserções de código adicional.
+- Modificar várias linhas de uma vez.
+- Fazer sugestões com base em suas alterações recentes e erros de lint.
 
-Free users receive 2000 suggestions at no cost. Pro and Business plans receive unlimited suggestions.
+Usuários gratuitos recebem 2000 sugestões sem custo. Planos Pro e Business recebem sugestões ilimitadas.
 
-### UI
+### Interface do Usuário
 
-When Cursor is only adding additional text, completions will appear as grey text. If a suggestion modifies existing code,
-it will appear as a diff popup to the right of your current line.
+Quando o Cursor está apenas adicionando texto adicional, as conclusões aparecerão como texto cinza. Se uma sugestão modificar o código existente,
+ela aparecerá como um popup de diff à direita da sua linha atual.
 
 <Frame className="flex items-stretch justify-center">
-  <img src="/images/cpp/ghost-text-example.png" className="h-full object-cover"/>
-  <img src="/images/cpp/preview-box-example.png" className="h-full object-cover"/>
+  <img
+    src="/images/cpp/ghost-text-example.png"
+    className="h-full object-cover"
+  />
+  <img
+    src="/images/cpp/preview-box-example.png"
+    className="h-full object-cover"
+  />
 </Frame>
 
-You can accept a suggestion by pressing `Tab`, or reject it by pressing `Esc`. To partially accept a suggestion word-by-word, press `Ctrl/⌘ →`. 
-To reject a suggestion, just keep typing, or use `Escape` to cancel/hide the suggestion.
+Você pode aceitar uma sugestão pressionando `Tab`, ou rejeitá-la pressionando `Esc`. Para aceitar parcialmente uma sugestão palavra por palavra, pressione `Ctrl/⌘ →`.
+Para rejeitar uma sugestão, continue digitando ou use `Escape` para cancelar/ocultar a sugestão.
 
-Every keystroke or cursor movement, Cursor will attempt to make a suggestion based on your recent changes. However, Cursor will not always show a suggestion; sometimes the model has predicted that there's no change to be made.
+A cada pressionamento de tecla ou movimento do cursor, o Cursor tentará fazer uma sugestão com base em suas alterações recentes. No entanto, o Cursor nem sempre mostrará uma sugestão; às vezes o modelo previu que não há mudança a ser feita.
 
-Cursor can make changes from one line above to two lines below your current line.
+O Cursor pode fazer alterações de uma linha acima até duas linhas abaixo da sua linha atual.
 
-### Toggling
+### Alternando
 
-To turn the feature on or off, hover over "Cursor Tab" icon on the status bar in the bottom right of the application.
+Para ligar ou desligar o recurso, passe o mouse sobre o ícone "Cursor Tab" na barra de status no canto inferior direito do aplicativo.

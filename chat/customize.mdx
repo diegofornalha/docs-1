@@ -1,39 +1,37 @@
 ---
-title: Customize
+title: Personalizar
 ---
 
-### Choose an AI Model
+### Escolher um Modelo de IA
 
-Pick your preferred AI model through the [model toggle](/advanced/models#model-dropdown), and Cursor Chat will use that model to generate responses. You can toggle between models by pressing `Ctrl/⌘ /`. 
+Escolha seu modelo de IA preferido através do [alternador de modelo](/advanced/models#model-dropdown), e o Cursor Chat usará esse modelo para gerar respostas. Você pode alternar entre modelos pressionando `Ctrl/⌘ /`.
 
-By default, Cursor Chat uses OpenAI's `GPT-4` for its AI model (specifically, the `gpt-4` label points to our instance of GPT4-Turbo).
+Por padrão, o Cursor Chat usa o `GPT-4` da OpenAI para seu modelo de IA (especificamente, o rótulo `gpt-4` aponta para nossa instância do GPT4-Turbo).
 
-The AI model you choose for Chat will be saved for future sessions, so you don't have to change it every time you open Cursor Chat.
+O modelo de IA que você escolher para o Chat será salvo para sessões futuras, então você não precisará mudá-lo toda vez que abrir o Cursor Chat.
 
 <Frame>
   <img src="/images/chat/model-toggle.png" />
 </Frame>
 
+### No Editor
 
-### In-Editor
+O Cursor Chat também pode ser usado como uma aba do editor clicando no botão horizontal "Mais" e, em seguida, clicando no botão "Abrir Chat no Editor".
+O Cursor Chat então se comportará como uma aba regular do editor. Pressionar `Ctrl/⌘ + L` abrirá a aba de chat e focará nela.
 
-Cursor Chat can also be used as an editor tab by clicking on the horizontal "More" button, and then clicking on the "Open Chat in Editor" button.
-Cursor Chat will then behave as a regular editor tab. Pressing `Ctrl/⌘ + L` will bring up the chat tab and focus onto it. 
+### Configurações
 
+Você pode personalizar o Cursor Chat em `Configurações do Cursor` > `Recursos` > `Chat`.
 
-### Settings
+Essas configurações incluem:
 
-You can customize the Cursor Chat under `Cursor Settings` > `Features` > `Chat`.
-
-These settings include:
-
-- Always search the web for answers.
-  - This will make the AI model browse the web each query for the most up-to-date information.
-- Add chat fading animation.
-  - This adds a smooth animation to the AI messages as they are generated.
-- Default to no context.
-  - This will make the AI model only use the user message as context, and no additional context such as current file will be included.
-- Auto scroll chat.
-  - This will automatically scroll the chat as the AI generates text when at the bottom of the thread.
-- Narrow scrollbar in the chat pane.
-- Show chat history when starting a new chat.
+- Sempre buscar respostas na web.
+  - Isso fará com que o modelo de IA navegue na web a cada consulta para obter as informações mais atualizadas.
+- Adicionar animação de desvanecimento no chat.
+  - Isso adiciona uma animação suave às mensagens de IA à medida que são geradas.
+- Padrão para nenhum contexto.
+  - Isso fará com que o modelo de IA use apenas a mensagem do usuário como contexto, e nenhum contexto adicional, como o arquivo atual, será incluído.
+- Rolagem automática do chat.
+  - Isso rolará automaticamente o chat à medida que a IA gera texto quando estiver no final do thread.
+- Barra de rolagem estreita no painel de chat.
+- Mostrar histórico de chat ao iniciar um novo chat.

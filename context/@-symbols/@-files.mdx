@@ -4,46 +4,40 @@ title: "@Files"
 
 ### `@Files`
 
-In AI input boxes such as in Cursor Chat and Cmd K, you can reference entire files by using `@Files`. 
-Also, if you continue to type after `@`, you will see your file search results after the [`@Code`](/context/@-symbols/@-code) strategy.
+Nas caixas de entrada de IA, como no Cursor Chat e Cmd K, você pode referenciar arquivos inteiros usando `@Files`.
+Além disso, se você continuar digitando após `@`, verá os resultados da busca de arquivos após a estratégia [`@Code`](/context/@-symbols/@-code).
 
-
-
-In order to make sure the file you're referencing is the correct file, Cursor will show a preview of the file's path. This is especially useful when you have multiple files with the same name in different folders.
+Para garantir que o arquivo que você está referenciando é o correto, o Cursor mostrará uma pré-visualização do caminho do arquivo. Isso é especialmente útil quando você tem vários arquivos com o mesmo nome em pastas diferentes.
 
 <Frame>
-<img src="/images/context/@file.png"/>
+  <img src="/images/context/@file.png" />
 </Frame>
 
+### Referências de Arquivos Longos no Chat
 
-### Chat Long File References
-
-In Cursor's Chat, if the contents of a file is too long, Cursor will chunk the file into smaller chunks and rerank them based on relevance to the query.
+No Chat do Cursor, se o conteúdo de um arquivo for muito longo, o Cursor dividirá o arquivo em partes menores e as reclassificará com base na relevância para a consulta.
 
 <Frame>
-<img src="/images/context/@file-long-file.png"/>
+  <img src="/images/context/@file-long-file.png" />
 </Frame>
 
+### Estratégia de Fragmentação Cmd K
 
-### Cmd K Chunking Strategy
-
-For Cmd K, Cursor uses the file references differently based on the content length as well.
+Para Cmd K, o Cursor usa as referências de arquivo de maneira diferente com base no comprimento do conteúdo.
 
 - auto
-  - Automatically pick one of the three reading strategies based on the file size 
-- full file
-  - The entire file is used as context.
-- outline
-  - Cursor parses the outline of the file and uses the information as context.
-- chunks
-  - Cursor chunks the file into smaller chunks and picks the most relevant one.
+  - Escolhe automaticamente uma das três estratégias de leitura com base no tamanho do arquivo
+- arquivo completo
+  - O arquivo inteiro é usado como contexto.
+- esboço
+  - O Cursor analisa o esboço do arquivo e usa as informações como contexto.
+- fragmentos
+  - O Cursor divide o arquivo em partes menores e escolhe a mais relevante.
 
 <Frame>
-<img src="/images/context/@file-cmdk.png"/>
+  <img src="/images/context/@file-cmdk.png" />
 </Frame>
 
+### Arrastar e Soltar
 
-### Drag and Drop
-
-You can drag and drop files from the primary sidebar into Chat or Cmd K to add them as context as well.
-
+Você pode arrastar e soltar arquivos da barra lateral principal no Chat ou Cmd K para adicioná-los como contexto também.
