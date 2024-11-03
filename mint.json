@@ -12,7 +12,7 @@
     "dark": "#0C0C15",
     "background": {
       "dark": "#0C0C15",
-      "light": "#fff"
+      "light": "#ffffff"
     },
     "anchors": {
       "from": "#0C0C15",
@@ -25,7 +25,7 @@
     "og:description": "Feito para torná-lo extraordinariamente produtivo, o Cursor é a melhor maneira de programar com IA.",
     "og:url": "https://cursor.com",
     "og:image": "/images/hero.png",
-    "og:locale": "en_US",
+    "og:locale": "pt_BR",
     "og:logo": "/images/logo/app-logo.svg",
     "article:publisher": "Anysphere Inc.",
     "twitter:title": "Cursor - Construa Software Mais Rápido",
@@ -40,6 +40,10 @@
     {
       "name": "Doc Original",
       "url": "https://phizclip-assets.phiz.live/phizclip/mop-pt/document/pt/introduce/introduction/PhizClip.html"
+    },
+    {
+      "name": "Support",
+      "url": "mailto:hi@mintlify.com"
     }
   ],
   "topbarCtaButton": {
@@ -52,6 +56,16 @@
       "icon": "newspaper",
       "url": "https://phizclip-assets.phiz.live/phizclip/mop-pt/document/pt/introduce/introduction/PhizClip.html",
       "iconType": "duotone"
+    },
+    {
+      "name": "Community",
+      "icon": "slack",
+      "url": "https://mintlify.com/community"
+    },
+    {
+      "name": "Blog",
+      "icon": "newspaper",
+      "url": "https://mintlify.com/blog"
     }
   ],
   "navigation": [
@@ -123,10 +137,11 @@
   ],
   "footerSocials": {
     "twitter": "https://twitter.com/cursor_ai",
-    "github": "https://github.com/getcursor/cursor/"
+    "github": "https://github.com/getcursor/cursor/",
+    "linkedin": "https://linkedin.com/company/mintlify"
   },
   "modeToggle": {
-    "default": "light",
-    "isHidden": true
+    "default": "dark",
+    "isHidden": false
   }
 }
