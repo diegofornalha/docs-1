@@ -13,133 +13,35 @@
     "background": {
       "dark": "#0C0C15",
       "light": "#ffffff"
-    },
-    "anchors": {
-      "from": "#0C0C15",
-      "to": "#0C0C15"
     }
   },
   "metadata": {
     "og:site_name": "Cursor",
     "og:title": "Cursor - Construa Software Mais Rápido",
     "og:description": "Feito para torná-lo extraordinariamente produtivo, o Cursor é a melhor maneira de programar com IA.",
-    "og:url": "https://cursor.com",
-    "og:image": "/images/hero.png",
-    "og:locale": "pt_BR",
-    "og:logo": "/images/logo/app-logo.svg",
-    "article:publisher": "Anysphere Inc.",
-    "twitter:title": "Cursor - Construa Software Mais Rápido",
-    "twitter:description": "Feito para torná-lo extraordinariamente produtivo, o Cursor é a melhor maneira de programar com IA.",
-    "twitter:url": "https://cursor.com",
-    "twitter:image": "/images/hero.png",
-    "twitter:site": "@cursor_ai",
-    "og:image:width": "1200",
-    "og:image:height": "630"
+    "og:locale": "pt_BR"
   },
   "topbarLinks": [
     {
       "name": "Doc Original",
-      "url": "https://phizclip-assets.phiz.live/phizclip/mop-pt/document/pt/introduce/introduction/PhizClip.html"
+      "url": "#"
     },
     {
       "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "url": "#"
     }
   ],
   "topbarCtaButton": {
     "name": "Baixar a IDE",
-    "url": "https://phizclip-assets.phiz.live/phizclip/mop-pt/document/pt/idedownload/idedownload/idedownload.html"
+    "url": "#"
   },
-  "anchors": [
-    {
-      "name": "Documentação original",
-      "icon": "newspaper",
-      "url": "https://phizclip-assets.phiz.live/phizclip/mop-pt/document/pt/introduce/introduction/PhizClip.html",
-      "iconType": "duotone"
-    },
-    {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
-    },
-    {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
-    }
-  ],
   "navigation": [
     {
       "group": "Introdução",
       "pages": ["get-started/migrate-from-vscode", "get-started/usage"]
-    },
-    {
-      "group": "Aba",
-      "pages": ["tab/overview", "tab/from-gh-copilot", "tab/advanced-features"]
-    },
-    {
-      "group": "Chat",
-      "pages": [
-        "chat/overview",
-        "chat/customize",
-        "chat/codebase",
-        "chat/apply"
-      ]
-    },
-    {
-      "group": "Cmd K",
-      "pages": ["cmdk/overview", "cmdk/terminal-cmdk"]
-    },
-    {
-      "group": "Contexto",
-      "pages": [
-        "context/codebase-indexing",
-        "context/rules-for-ai",
-        {
-          "group": "@ Símbolos",
-          "pages": [
-            "context/@-symbols/basic",
-            "context/@-symbols/@-files",
-            "context/@-symbols/@-folders",
-            "context/@-symbols/@-code",
-            "context/@-symbols/@-docs",
-            "context/@-symbols/@-git",
-            "context/@-symbols/@-codebase",
-            "context/@-symbols/@-web",
-            "context/@-symbols/@-chat",
-            "context/@-symbols/@-definitions",
-            "context/@-symbols/@-link"
-          ]
-        },
-        "context/ignore-files"
-      ]
-    },
-    {
-      "group": "Avançado",
-      "pages": [
-        "advanced/models",
-        "advanced/api-keys",
-        "advanced/ai-review",
-        "advanced/shadow-workspace"
-      ]
-    },
-    {
-      "group": "Privacidade",
-      "pages": ["privacy/privacy"]
-    },
-    {
-      "group": "Solução de Problemas",
-      "pages": [
-        "troubleshooting/common-issues",
-        "troubleshooting/troubleshooting-guide"
-      ]
     }
+    // ... outras seções de navegação ...
   ],
-  "footerSocials": {
-    "twitter": "https://twitter.com/cursor_ai",
-    "github": "https://github.com/getcursor/cursor/",
-    "linkedin": "https://linkedin.com/company/mintlify"
-  },
   "modeToggle": {
     "default": "dark",
     "isHidden": false
