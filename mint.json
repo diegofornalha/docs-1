@@ -17,30 +17,70 @@
   },
   "metadata": {
     "og:site_name": "Cursor",
-    "og:title": "Cursor - Construa Software Mais Rápido",
-    "og:description": "Feito para torná-lo extraordinariamente produtivo, o Cursor é a melhor maneira de programar com IA.",
-    "og:locale": "pt_BR"
+    "og:title": "Cursor - Construa Software Mais Rápido"
   },
-  "topbarLinks": [
-    {
-      "name": "Doc Original",
-      "url": "#"
-    },
-    {
-      "name": "Support",
-      "url": "#"
-    }
-  ],
-  "topbarCtaButton": {
-    "name": "Baixar a IDE",
-    "url": "#"
-  },
+
   "navigation": [
     {
       "group": "Introdução",
-      "pages": ["get-started/migrate-from-vscode", "get-started/usage"]
+      "pages": ["get-started/what-is-cursor"]
+    },
+    {
+      "group": "advanced",
+      "pages": [
+        "advanced/ai-review",
+        "advanced/api-keys",
+        "advanced/models",
+        "advanced/shadow-workspace"
+      ]
+    },
+    {
+      "group": "CMDK",
+      "pages": ["cmdk/overview", "cmdk/terminal-cmdk"]
+    },
+    {
+      "group": "Miscellaneous",
+      "pages": [
+        "miscellaneous/auto-terminal-debug",
+        "miscellaneous/keyboard-shortcuts"
+      ]
+    },
+    {
+      "group": "tab",
+      "pages": ["tab/overview", "tab/advanced-features", "tab/from-gh-copilot"]
+    },
+    {
+      "group": "privacy",
+      "pages": ["privacy/privacy"]
+    },
+
+    {
+      "group": "context",
+      "pages": [
+        "context/codebase-indexing",
+        "context/ignore-files",
+        "context/rules-for-ai",
+        "context/@-symbols/basic",
+        "context/@-symbols/@-chat",
+        "context/@-symbols/@-code",
+        "context/@-symbols/@-codebase",
+        "context/@-symbols/@-definitions",
+        "context/@-symbols/@-docs",
+        "context/@-symbols/@-files",
+        "context/@-symbols/@-folders",
+        "context/@-symbols/@-git",
+        "context/@-symbols/@-link",
+        "context/@-symbols/@-web"
+      ]
+    },
+
+    {
+      "group": "troubleshooting",
+      "pages": [
+        "troubleshooting/common-issues",
+        "troubleshooting/troubleshooting-guide"
+      ]
     }
-    // ... outras seções de navegação ...
   ],
   "modeToggle": {
     "default": "dark",
