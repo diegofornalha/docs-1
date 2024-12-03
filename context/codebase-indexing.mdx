@@ -1,30 +1,79 @@
----
-title: "Indexação da Base de Código"
----
+# Regras Gerais
 
-### O que é a Indexação da Base de Código?
+Manter código limpo e bem documentado
+Seguir princípios SOLID e DRY
+Priorizar legibilidade e manutenibilidade
+Usar nomes descritivos e significativos
+Adicionar comentários explicativos quando necessário
 
-A indexação da base de código é um processo que permite ao Cursor analisar e entender melhor sua base de código, calculando embeddings para cada arquivo. Isso melhora a precisão das respostas da IA ao usar `@codebase` ou `Ctrl/⌘ Enter`, pois a IA pode acessar rapidamente o contexto relevante.
+# Padrões de Código
 
-<Frame>
-  <img src="/images/chat/codebase-indexing.png" />
-</Frame>
+Seguir style guide do projeto
+Manter indentação e formatação consistentes
+Limitar comprimento de linhas a 80-120 caracteres
+Usar convenções de nomenclatura padronizadas
+Evitar código duplicado
 
-## Como Funciona
+# Segurança
 
-Durante a indexação, o Cursor escaneia sua base de código e gera embeddings, que são representações matemáticas dos arquivos. Esses embeddings são usados para identificar rapidamente quais partes do código são mais relevantes para uma consulta específica.
+Validar entradas de usuário
+Sanitizar dados antes de usar em queries
+Evitar exposição de informações sensíveis
+Implementar controle de acesso apropriado
+Usar práticas seguras de autenticação
 
-### Benefícios da Indexação
+# Performance
 
-- **Respostas Mais Precisas**: Com a indexação, a IA pode fornecer respostas mais precisas e contextualmente relevantes, pois tem acesso a uma visão mais completa do seu código.
-- **Eficiência**: A indexação permite que a IA acesse rapidamente o contexto necessário, reduzindo o tempo de resposta.
-- **Atualizações Automáticas**: O índice da base de código é automaticamente sincronizado com suas alterações mais recentes, garantindo que a IA sempre trabalhe com a versão mais atual do seu código.
+Otimizar consultas ao banco de dados
+Minimizar complexidade algorítmica
+Evitar loops aninhados desnecessários
+Usar caching quando apropriado
+Considerar paginação para grandes conjuntos de dados
 
-### Como Configurar a Indexação
+# Testes
 
-Você pode configurar a indexação da base de código em `Configurações do Cursor` > `Recursos` > `Indexação da Base de Código`. Aqui, você pode ativar ou desativar a indexação automática para novos repositórios e ajustar as configurações de arquivos a serem ignorados.
+Escrever testes unitários para novas funcionalidades
+Manter cobertura de testes adequada
+Testar casos de borda e exceções
+Usar mocks e stubs apropriadamente
+Seguir padrão AAA (Arrange-Act-Assert)
 
-### Configurações Avançadas
+# Documentação
 
-- **Ignorar Arquivos**: Use um arquivo `.cursorignore` para especificar quais arquivos ou diretórios devem ser ignorados durante a indexação. Isso pode melhorar a precisão das respostas ao excluir arquivos irrelevantes.
-- **Indexação Automática**: Ative a indexação automática para garantir que novos repositórios sejam indexados assim que forem adicionados ao Cursor.
+Manter documentação atualizada
+Documentar APIs e interfaces públicas
+Incluir exemplos de uso
+Explicar decisões arquiteturais importantes
+Documentar dependências e requisitos
+
+# Versionamento
+
+Usar mensagens de commit descritivas
+Seguir versionamento semântico
+Manter histórico de alterações
+Criar branches para features/fixes
+Fazer code review antes de merge
+
+# Acessibilidade
+
+Seguir diretrizes WCAG
+Usar tags semânticas apropriadas
+Fornecer textos alternativos para imagens
+Garantir navegação por teclado
+Manter contraste adequado
+
+# Internacionalização
+
+Usar sistema de traduções
+Evitar textos hardcoded
+Considerar diferentes formatos de data/hora
+Suportar diferentes moedas
+Respeitar convenções culturais
+
+# Manutenção
+
+Remover código morto
+Atualizar dependências regularmente
+Refatorar código complexo
+Resolver warnings e TODOs
+Manter débito técnico sob controle
